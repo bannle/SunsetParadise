@@ -1,0 +1,151 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bannle\\Documents\\udb\\proyectosvisual\\SunsetParadise\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|c:\\users\\bannle\\documents\\udb\\proyectosvisual\\sunsetparadise\\views\\roommanagement\\_availablerooms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|solutionrelative:views\\roommanagement\\_availablerooms.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|c:\\users\\bannle\\documents\\udb\\proyectosvisual\\sunsetparadise\\views\\roommanagement\\roommanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|solutionrelative:views\\roommanagement\\roommanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|c:\\users\\bannle\\documents\\udb\\proyectosvisual\\sunsetparadise\\controllers\\roommanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|solutionrelative:controllers\\roommanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|c:\\users\\bannle\\documents\\udb\\proyectosvisual\\sunsetparadise\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|c:\\users\\bannle\\documents\\udb\\proyectosvisual\\sunsetparadise\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bannle\\Documents\\udb\\proyectosvisual\\CajeroWeb\\Views\\Nacionales\\Nacionales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|c:\\users\\bannle\\documents\\udb\\proyectosvisual\\sunsetparadise\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|solutionrelative:models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Nacionales.cshtml",
+              "DocumentMoniker": "C:\\Users\\bannle\\Documents\\udb\\proyectosvisual\\CajeroWeb\\Views\\Nacionales\\Nacionales.cshtml",
+              "RelativeDocumentMoniker": "..\\CajeroWeb\\Views\\Nacionales\\Nacionales.cshtml",
+              "ToolTip": "C:\\Users\\bannle\\Documents\\udb\\proyectosvisual\\CajeroWeb\\Views\\Nacionales\\Nacionales.cshtml",
+              "RelativeToolTip": "..\\CajeroWeb\\Views\\Nacionales\\Nacionales.cshtml",
+              "ViewState": "AgIAABoAAAAAL08kzxYswCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-18T22:08:00.692Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_AvailableRooms.cshtml",
+              "DocumentMoniker": "C:\\Users\\bannle\\Documents\\udb\\proyectosvisual\\SunsetParadise\\Views\\RoomManagement\\_AvailableRooms.cshtml",
+              "RelativeDocumentMoniker": "Views\\RoomManagement\\_AvailableRooms.cshtml",
+              "ToolTip": "C:\\Users\\bannle\\Documents\\udb\\proyectosvisual\\SunsetParadise\\Views\\RoomManagement\\_AvailableRooms.cshtml*",
+              "RelativeToolTip": "Views\\RoomManagement\\_AvailableRooms.cshtml*",
+              "ViewState": "AgIAAAIAAAAA283ypGgDwBIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-18T22:30:02.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\bannle\\Documents\\udb\\proyectosvisual\\SunsetParadise\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\bannle\\Documents\\udb\\proyectosvisual\\SunsetParadise\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-18T21:32:36.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\bannle\\Documents\\udb\\proyectosvisual\\SunsetParadise\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\bannle\\Documents\\udb\\proyectosvisual\\SunsetParadise\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAoAAADwgo4EeAUtwBYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T21:34:26.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoomManagement.cshtml",
+              "DocumentMoniker": "C:\\Users\\bannle\\Documents\\udb\\proyectosvisual\\SunsetParadise\\Views\\RoomManagement\\RoomManagement.cshtml",
+              "RelativeDocumentMoniker": "Views\\RoomManagement\\RoomManagement.cshtml",
+              "ToolTip": "C:\\Users\\bannle\\Documents\\udb\\proyectosvisual\\SunsetParadise\\Views\\RoomManagement\\RoomManagement.cshtml",
+              "RelativeToolTip": "Views\\RoomManagement\\RoomManagement.cshtml",
+              "ViewState": "AgIAAF8AAAAAPOjBM28vwFcAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-18T16:57:40.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\bannle\\Documents\\udb\\proyectosvisual\\SunsetParadise\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "Models\\Room.cs",
+              "ToolTip": "C:\\Users\\bannle\\Documents\\udb\\proyectosvisual\\SunsetParadise\\Models\\Room.cs",
+              "RelativeToolTip": "Models\\Room.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T17:13:23.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoomManagementController.cs",
+              "DocumentMoniker": "C:\\Users\\bannle\\Documents\\udb\\proyectosvisual\\SunsetParadise\\Controllers\\RoomManagementController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoomManagementController.cs",
+              "ToolTip": "C:\\Users\\bannle\\Documents\\udb\\proyectosvisual\\SunsetParadise\\Controllers\\RoomManagementController.cs",
+              "RelativeToolTip": "Controllers\\RoomManagementController.cs",
+              "ViewState": "AgIAABUAAACgzfJucpU9wA0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T16:57:11.514Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

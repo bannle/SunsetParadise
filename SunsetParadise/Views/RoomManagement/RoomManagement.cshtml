@@ -1,0 +1,113 @@
+﻿@model List<SunsetParadise.Models.Room>
+@{
+    ViewBag.Title = "Gestión de Habitaciones";
+    var TipoHabitación = new List<SelectListItem>(){
+    new SelectListItem { Text = "Habitación individual", Value = "Habitación individual", Selected = true },
+    new SelectListItem { Text = "Habitación doble estándar", Value = "Habitación doble estándar" },
+    new SelectListItem { Text = "Habitación doble deluxe", Value = "Habitación doble deluxe" },
+    new SelectListItem { Text = "Suite júnior", Value = "Suite júnior" },
+    new SelectListItem { Text = "Suite ejecutiva", Value = "Suite ejecutiva" },
+    new SelectListItem { Text = "Suite presidencial", Value = "Suite presidencial" }
+};
+}
+
+<header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="RoomManagement" asp-action="RoomManagement">SunsetParadise</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="RoomManagement" asp-controller="RoomManagement" asp-action="RoomManagement">Habitaciones</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="ClientManagement" asp-controller="ClientManagement" asp-action="ClientManagement">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="ReservationManagement" asp-controller="ReservationManagement" asp-action="ReservationManagement">Reservas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<div class="container">
+    <h2>Gestión de Habitaciones</h2>
+    <!-- Botones -->
+    <div class="mb-3">
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addRoomModal">Agregar Habitación</button>
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#availableRoomsModal">Habitaciones Disponibles</button>
+    </div>
+    <!-- Listado de habitaciones -->
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Número</th>
+                <th>Tipo</th>
+                <th>Precio</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var room in Model)
+            {
+                <tr>
+                    <td>@room.Number</td>
+                    <td>@room.Type</td>
+                    <td>
+                        @room.Price.ToString("C", new System.Globalization.CultureInfo("en-US"))
+                    </td>
+                    <td>@room.Status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<!-- Modal Agregar Habitación -->
+<div class="modal fade" id="addRoomModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Agregar Habitación</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form asp-controller="RoomManagement" asp-action="AddRoom" method="post">
+                    <div class="mb-3">
+                        <label>Número</label>
+                        <input type="number" name="Number" class="form-control" required />
+                    </div>
+                    <!-- Selección de banco -->
+                    <div class="mb-3">
+                        <label>Tipo</label>
+                        @Html.DropDownList(
+                        "Type", TipoHabitación, new { @class = "form-select" })
+                    </div>
+                    <div class="mb-3">
+                        <label>Precio</label>
+                        <input type="number" name="Price" step="0.01" class="form-control" required />
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Guardar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Habitaciones Disponibles -->
+<div class="modal fade" id="availableRoomsModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Habitaciones Disponibles</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="availableRoomsContent">
+                @await Html.PartialAsync("_AvailableRooms", Model.Where(r => r.Status == "Disponible").ToList())
+            </div>
+        </div>
+    </div>
+</div>

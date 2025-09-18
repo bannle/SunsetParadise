@@ -1,0 +1,23 @@
+﻿@model List<SunsetParadise.Models.Room>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Número</th>
+            <th>Tipo</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var room in Model)
+        {
+            <tr>
+                <td>@room.Number</td>
+                <td>@room.Type</td>
+                <td>
+                    @room.Price.ToString("C", new System.Globalization.CultureInfo("en-US"))
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
