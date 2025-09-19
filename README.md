@@ -28,7 +28,7 @@ Este proyecto es un **sistema de gestión de reservas de hotel** desarrollado co
 1. **Clonar el repositorio:**
 
 ```bash
-git clone https://github.com/tu-usuario/SunsetParadise.git
+git clone https://github.com/bannle/SunsetParadise.git
 cd SunsetParadise
 ````
 
