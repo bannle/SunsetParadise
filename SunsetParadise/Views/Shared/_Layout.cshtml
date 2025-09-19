@@ -16,5 +16,26 @@
 	</div>
 	<!-- Bootstrap JS (opcional si usas modales, dropdowns, etc.) -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Formato DUI: ########-#
+            document.getElementById("duiInput").addEventListener("input", function (e) {
+                let value = e.target.value.replace(/\D/g, ""); // solo números
+                if (value.length > 8) {
+                    e.target.value = value.substring(0, 8) + "-" + value.substring(8, 9);
+                } else {
+                    e.target.value = value;
+                }
+            });
+
+            // Formato Teléfono: ####-####
+            document.getElementById("phoneInput").addEventListener("input", function (e) {
+                let value = e.target.value.replace(/\D/g, ""); // solo números
+                if (value.length > 4) {
+                    e.target.value = value.substring(0, 4) + "-" + value.substring(4, 8);
+                } else {
+                    e.target.value = value;
+                }
+            });
+        </script>
 </body>
 </html>

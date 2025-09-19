@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SunsetParadise")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3455d98856e8af5fe7638f39e7300a80dc782c47")]
 [assembly: System.Reflection.AssemblyProductAttribute("SunsetParadise")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SunsetParadise")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
