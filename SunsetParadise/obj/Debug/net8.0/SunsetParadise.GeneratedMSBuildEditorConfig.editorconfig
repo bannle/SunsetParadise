@@ -32,6 +32,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/bannle/Documents/udb/desafio2/SunsetParadise/Views/ReservationManagement/ReservationManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25NYW5hZ2VtZW50XFJlc2VydmF0aW9uTWFuYWdlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bannle/Documents/udb/desafio2/SunsetParadise/Views/ReservationManagement/_ActiveReservations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25NYW5hZ2VtZW50XF9BY3RpdmVSZXNlcnZhdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/bannle/Documents/udb/desafio2/SunsetParadise/Views/RoomManagement/RoomManagement.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbU1hbmFnZW1lbnRcUm9vbU1hbmFnZW1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

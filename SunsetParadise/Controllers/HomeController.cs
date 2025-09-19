@@ -12,6 +12,13 @@ namespace SunsetParadise.Controllers
             return View();
         }
 
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index", "Home");
+        }
+
         [HttpPost]
         public IActionResult Index(string username, string password)
         {
@@ -23,9 +30,11 @@ namespace SunsetParadise.Controllers
             else
             {
                 ViewBag.Error = "Usuario o contraseña incorrectos";
-                return RedirectToAction("Index", "Home");
+                return View();
             }
         }
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

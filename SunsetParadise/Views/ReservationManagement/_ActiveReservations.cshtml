@@ -1,0 +1,29 @@
+﻿@model List<SunsetParadise.Models.Reservation>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Cliente</th>
+            <th>Habitación</th>
+            <th>Tipo</th>
+            <th>Precio</th>
+            <th>Entrada</th>
+            <th>Salida</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var res in Model)
+        {
+            <tr>
+                <td>@res.ClientName</td>
+                <td>@res.RoomNumber</td>
+                <td>@res.RoomType</td>
+                <td>@res.RoomPrice.ToString("C", new System.Globalization.CultureInfo("en-US"))</td>
+                <td>@res.CheckIn.ToShortDateString()</td>
+                <td>@res.CheckOut.ToShortDateString()</td>
+                <td>@res.Total.ToString("C", new System.Globalization.CultureInfo("en-US"))</td>
+            </tr>
+        }
+    </tbody>
+</table>

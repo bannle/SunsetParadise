@@ -13,19 +13,29 @@ namespace SunsetParadise.Controllers
             new Client { Name = "Carlos Sánchez", DUI = "11223344-5", Phone = "5555-6666" }
         };
 
+        public static List<Client> GetClients() => _clients;
         public IActionResult ClientManagement()
         {
-            return View(_clients);
+            var clients = _clients.ToList();
+
+            var viewModel = new ClientManagementViewModel
+            {
+                Clients = clients,
+                NewClient = new Client()
+            };
+
+            return View(viewModel); 
         }
 
         [HttpPost]
-        public IActionResult AddClient(Client client)
+        public IActionResult AddClient(ClientManagementViewModel model)
         {
             if (ModelState.IsValid)
             {
-                _clients.Add(client);
+                _clients.Add(model.NewClient);
             }
             return RedirectToAction("ClientManagement");
         }
+
     }
 }

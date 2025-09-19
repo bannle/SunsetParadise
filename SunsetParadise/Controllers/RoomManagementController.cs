@@ -8,11 +8,12 @@ namespace SunsetParadise.Controllers
     {
         private static List<Room> _rooms = new List<Room>
         {
-            new Room { Number = 101, Type = "Habitación individual", Price = 50 },
+            new Room { Number = 101, Type = "Habitación individual", Price = 50},
             new Room { Number = 102, Type = "Habitación doble estándar", Price = 80 },
-            new Room { Number = 103, Type = "Habitación doble estándarite", Price = 150 }
+            new Room { Number = 103, Type = "Habitación doble deluxe", Price = 150 }
         };
-        
+        public static List<Room> GetRooms() => _rooms;
+
         public ActionResult RoomManagement()
         {
             return View(_rooms);

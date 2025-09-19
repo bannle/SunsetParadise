@@ -31,6 +31,9 @@
                         <a class="nav-link text-dark" asp-area="ReservationManagement" asp-controller="ReservationManagement" asp-action="ReservationManagement">Reservas</a>
                         </li>
                     </ul>
+                <form asp-controller="Home" asp-action="Logout" method="post" class="d-flex">
+                    <button type="submit" class="btn btn-outline-danger">Cerrar Sesión</button>
+                </form>
                 </div>
             </div>
         </nav>

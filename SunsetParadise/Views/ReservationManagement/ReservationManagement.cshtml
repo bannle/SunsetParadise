@@ -1,0 +1,132 @@
+﻿@model SunsetParadise.Models.ReservationViewModel
+
+@{
+    ViewBag.Title = "Gestión de Reservas";
+    var clients = ViewBag.Clients as List<SunsetParadise.Models.Client>;
+    var rooms = ViewBag.Rooms as List<SunsetParadise.Models.Room>;
+}
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-area="" asp-controller="RoomManagement" asp-action="RoomManagement">SunsetParadise</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="RoomManagement" asp-controller="RoomManagement" asp-action="RoomManagement">Habitaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="ClientManagement" asp-controller="ClientManagement" asp-action="ClientManagement">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="ReservationManagement" asp-controller="ReservationManagement" asp-action="ReservationManagement">Reservas</a>
+                    </li>
+                </ul>
+                <form asp-controller="Home" asp-action="Logout" method="post" class="d-flex">
+                    <button type="submit" class="btn btn-outline-danger">Cerrar Sesión</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Gestión de Reservas</h2>
+
+    <div class="mb-3">
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addReservationModal">Crear Reserva</button>
+    </div>
+
+    <!-- Tabla de reservas -->
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Habitación</th>
+                <th>Tipo</th>
+                <th>Precio/Noche</th>
+                <th>Entrada</th>
+                <th>Salida</th>
+                <th>Total</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var r in Model.Reservations)
+            {
+                <tr>
+                    <td>@r.ClientName</td>
+                    <td>@r.RoomNumber</td>
+                    <td>@r.RoomType</td>
+                    <td>@r.RoomPrice.ToString("C", new System.Globalization.CultureInfo("es-SV"))</td>
+                    <td>@r.CheckIn.ToString("dd/MM/yyyy")</td>
+                    <td>@r.CheckOut.ToString("dd/MM/yyyy")</td>
+                    <td>@r.Total.ToString("C", new System.Globalization.CultureInfo("es-SV"))</td>
+                    <td>@r.Estado</td>
+                    <td>
+                        @if (r.Estado == "Activa")
+                        {
+                            <form asp-controller="ReservationManagement" asp-action="CancelReservation" method="post" style="display:inline">
+                                <input type="hidden" name="id" value="@r.Id" />
+                                <button type="submit" class="btn btn-danger btn-sm">Anular</button>
+                            </form>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal Crear Reserva -->
+<div class="modal fade" id="addReservationModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Crear Reserva</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form asp-controller="ReservationManagement" asp-action="AddReservation" method="post">
+                    <div class="mb-3"> <label>Cliente</label> 
+                        <select name="ClientName" class="form-select">
+                            @foreach (var client in Model.Clients)
+                            {
+                                <option value="@client.Name">@client.Name</option>
+                            }
+                        </select>
+                                        </div>
+
+                    <div class="mb-3">
+                        <label>Habitación</label>
+                        <select asp-for="RoomNumber" class="form-select">
+                            @foreach (var room in Model.Rooms)
+                            {
+                                <option value="@room.Number">@room.Number - @room.Type (@room.Price.ToString("C", new System.Globalization.CultureInfo("es-SV")))</option>
+                            }
+                        </select>
+                        <span asp-validation-for="RoomNumber" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Fecha de Entrada</label>
+                        <input type="date" asp-for="CheckIn" class="form-control" />
+                        <span asp-validation-for="CheckIn" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Fecha de Salida</label>
+                        <input type="date" asp-for="CheckOut" class="form-control" />
+                        <span asp-validation-for="CheckOut" class="text-danger"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Guardar Reserva</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

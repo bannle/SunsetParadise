@@ -13,6 +13,14 @@
         Iniciar Sesión
     </button>
 </div>
+<br/>
+<br/>
+<div class="d-block text-center">
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger">@ViewBag.Error</div>
+    }
+</div>
 
 <!-- Modal Login -->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
@@ -23,10 +31,6 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body">
-                @if (ViewBag.Error != null)
-                    {
-                        <div class="alert alert-danger">@ViewBag.Error</div>
-                    }
                 <form asp-action="Index" method="post">
                     <div class="mb-3">
                         <label for="username" class="form-label">Usuario</label>

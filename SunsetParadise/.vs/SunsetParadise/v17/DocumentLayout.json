@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\bannle\\Documents\\udb\\desafio2\\SunsetParadise\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|c:\\users\\bannle\\documents\\udb\\desafio2\\sunsetparadise\\views\\clientmanagement\\clientmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|solutionrelative:views\\clientmanagement\\clientmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|c:\\users\\bannle\\documents\\udb\\desafio2\\sunsetparadise\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|c:\\users\\bannle\\documents\\udb\\desafio2\\sunsetparadise\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|solutionrelative:models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|c:\\users\\bannle\\documents\\udb\\desafio2\\sunsetparadise\\views\\roommanagement\\roommanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C4E63BDF-F176-4F4D-B3A5-44E752257F70}|SunsetParadise.csproj|solutionrelative:views\\roommanagement\\roommanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -26,64 +9,18 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\bannle\\Documents\\udb\\desafio2\\SunsetParadise\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\bannle\\Documents\\udb\\desafio2\\SunsetParadise\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T23:39:47.063Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RoomManagement.cshtml",
-              "DocumentMoniker": "C:\\Users\\bannle\\Documents\\udb\\desafio2\\SunsetParadise\\Views\\RoomManagement\\RoomManagement.cshtml",
-              "RelativeDocumentMoniker": "Views\\RoomManagement\\RoomManagement.cshtml",
-              "ToolTip": "C:\\Users\\bannle\\Documents\\udb\\desafio2\\SunsetParadise\\Views\\RoomManagement\\RoomManagement.cshtml",
-              "RelativeToolTip": "Views\\RoomManagement\\RoomManagement.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-18T23:21:33.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClientManagement.cshtml",
-              "DocumentMoniker": "C:\\Users\\bannle\\Documents\\udb\\desafio2\\SunsetParadise\\Views\\ClientManagement\\ClientManagement.cshtml",
-              "RelativeDocumentMoniker": "Views\\ClientManagement\\ClientManagement.cshtml",
-              "ToolTip": "C:\\Users\\bannle\\Documents\\udb\\desafio2\\SunsetParadise\\Views\\ClientManagement\\ClientManagement.cshtml",
-              "RelativeToolTip": "Views\\ClientManagement\\ClientManagement.cshtml",
-              "ViewState": "AgIAADUAAAAAAAAAAAAowFMAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-18T22:49:04.903Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\bannle\\Documents\\udb\\desafio2\\SunsetParadise\\Models\\Client.cs",
-              "RelativeDocumentMoniker": "Models\\Client.cs",
-              "ToolTip": "C:\\Users\\bannle\\Documents\\udb\\desafio2\\SunsetParadise\\Models\\Client.cs",
-              "RelativeToolTip": "Models\\Client.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T22:44:40.679Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"

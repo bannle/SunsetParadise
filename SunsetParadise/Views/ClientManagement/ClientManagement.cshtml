@@ -1,4 +1,5 @@
-﻿@model List<SunsetParadise.Models.Client>
+﻿@model SunsetParadise.Models.ClientManagementViewModel
+
 @{
     ViewBag.Title = "Gestión de Clientes";
 }
@@ -19,6 +20,9 @@
                         <a class="nav-link text-dark" asp-controller="ReservationManagement" asp-action="ReservationManagement">Reservas</a>
                     </li>
                 </ul>
+                <form asp-controller="Home" asp-action="Logout" method="post" class="d-flex">
+                    <button type="submit" class="btn btn-outline-danger">Cerrar Sesión</button>
+                </form>
             </div>
         </div>
     </nav>
@@ -42,7 +46,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var client in Model)
+            @foreach (var client in Model.Clients)
             {
                 <tr>
                     <td>@client.Name</td>
@@ -65,17 +69,23 @@
             <div class="modal-body">
                 <form asp-controller="ClientManagement" asp-action="AddClient" method="post">
                     <div class="mb-3">
-                        <label>Nombre</label>
-                        <input type="text" name="Name" class="form-control" required />
+                        @Html.LabelFor(m => m.NewClient.Name)
+                        @Html.TextBoxFor(m => m.NewClient.Name, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.NewClient.Name, "", new { @class = "text-danger" })
                     </div>
+
                     <div class="mb-3">
-                        <label>DUI</label>
-                        <input type="text" name="DUI" id="duiInput" class="form-control" maxlength="10" required />
+                        @Html.LabelFor(m => m.NewClient.DUI)
+                        @Html.TextBoxFor(m => m.NewClient.DUI, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.NewClient.DUI, "", new { @class = "text-danger" })
                     </div>
+
                     <div class="mb-3">
-                        <label>Teléfono</label>
-                        <input type="text" name="Phone" id="phoneInput" class="form-control" maxlength="9" required />
+                        @Html.LabelFor(m => m.NewClient.Phone)
+                        @Html.TextBoxFor(m => m.NewClient.Phone, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.NewClient.Phone, "", new { @class = "text-danger" })
                     </div>
+
                     <button type="submit" class="btn btn-primary w-100">Guardar</button>
                 </form>
             </div>
