@@ -2,6 +2,8 @@
 
 Este proyecto es un **sistema de gestión de reservas de hotel** desarrollado con **ASP.NET Core MVC**. Permite crear, visualizar y anular reservas, así como gestionar clientes y habitaciones.
 
+##Integrantes
+- María José Rivera Flores - RF231136
 ---
 
 ## Características
