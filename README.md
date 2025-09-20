@@ -1,7 +1,8 @@
 # Sistema de Gestión de Reservas - SunsetParadise
 
 Este proyecto es un **sistema de gestión de reservas de hotel** desarrollado con **ASP.NET Core MVC**. Permite crear, visualizar y anular reservas, así como gestionar clientes y habitaciones.
-
+- Video demostrativo(https://drive.google.com/file/d/11EfyPDAK27UgysaUpAZWWjoZ8QJJ--Uu/view?usp=drivesdk)
+- 
 ## Integrantes
 - María José Rivera Flores - RF231136
 ---
